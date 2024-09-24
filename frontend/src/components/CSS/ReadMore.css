@@ -1,0 +1,39 @@
+.features-container {
+  padding: 40px;
+  margin-top: 200px;
+  margin-left: 200px;
+}
+
+.feature-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 24px;
+  position: relative;
+  color: #0e0f0f;
+}
+
+.vertical-line {
+  width: 3px;
+  height: 350px;
+  background-color: blue;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-left: 10px;
+}
+
+.features-list li {
+  font-size: 18px;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  color: #0f0f0f;
+}
+
+.features-list i {
+  margin-right: 15px;
+  font-size: 24px;
+  color: #0a0a0a; 
+}

@@ -1,0 +1,72 @@
+.vote-page body {
+    background-color: #f8f9fa;
+  }
+  
+  .container-v {
+    max-width: 800px; 
+    width: 90%; 
+    margin: 0 auto; 
+    padding: 20px; 
+  }
+  
+  .vote-page .card {
+    border-radius: 0.5rem; 
+  }
+  
+  .vote-page .card-title {
+    font-weight: bold;
+    font-size: 1.5rem; 
+    color: #333;
+  }
+  
+  .vote-page .instructions-box {
+    margin-top: 20px;
+  }
+  
+  .vote-page .instructions-box ul {
+    padding-left: 20px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  
+  .vote-page .instructions-box li {
+    margin-bottom: 10px;
+  }
+  
+  .vote-page button {
+    width: 100px;
+  }
+  
+  .vote-page input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 576px) {
+    .vote-page .card-title {
+      font-size: 1.2rem; 
+    }
+    
+    .vote-page .instructions-box ul {
+      font-size: 0.8rem; 
+    }
+  
+    .vote-page button {
+      width: 80px;
+    }
+  }
+  
+  @media (min-width: 577px) and (max-width: 768px) {
+    .vote-page .card-title {
+      font-size: 1.3rem; 
+    }
+    
+    .vote-page .instructions-box ul {
+      font-size: 0.85rem; 
+    }
+  
+    .vote-page button {
+      width: 90px;
+    }
+  }
+  

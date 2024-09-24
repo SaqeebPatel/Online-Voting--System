@@ -1,0 +1,143 @@
+/* Scoped Voting Panel styles */
+.voting-panel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.voting-panel-container .voting-panel {
+  max-width: 900px;
+  width: 100%;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.voting-panel-container .voting-panel h3 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Candidate cards */
+.voting-panel-container .candidates {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.voting-panel-container .candidate-card {
+  width: 250px;
+  margin: 15px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.voting-panel-container .candidate-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.voting-panel-container .candidate-card.selected {
+  border: 3px solid #28a745;
+  background-color: #e9f7ef;
+}
+
+/* Thank you message */
+.voting-panel-container .thank-you-message {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.voting-panel-container .thank-you-message h2 {
+  color: #28a745;
+}
+
+.voting-panel-container .thank-you-message p {
+  font-size: 18px;
+  color: #555;
+}
+
+.voting-panel-container .thank-you-message button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.voting-panel-container .thank-you-message button:hover {
+  background-color: #0056b3;
+}
+
+/* Accordion styling for candidate info */
+.voting-panel-container .confirmation-section {
+  margin-top: 30px;
+}
+
+.voting-panel-container .confirmation-section .accordion-header {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.voting-panel-container .confirmation-section .accordion-body {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.voting-panel-container .confirmation-section .accordion-body h4 {
+  margin-bottom: 15px;
+}
+
+.voting-panel-container .confirmation-section .accordion-body p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.voting-panel-container .confirmation-section .accordion-body label {
+  display: inline-block;
+  margin-left: 10px;
+  color: #555;
+}
+
+.voting-panel-container .submit-vote {
+  margin-top: 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.voting-panel-container .submit-vote:hover {
+  background-color: #218838;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .voting-panel-container .candidates {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .voting-panel-container .candidate-card {
+    width: 100%;
+  }
+}
